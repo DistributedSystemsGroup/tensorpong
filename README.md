@@ -1,4 +1,9 @@
-<<<<<<< HEAD
+## universe-starter-agent
+
+# Preface
+
+This repo is a clone of the original [universe-starter-agent](https://github.com/openai/universe-starter-agent) by [openai](https://openai.com/). It has been cloned as a starting point for the Semester Project "Learning to Play Atari Pong with TensorFlow on OpenAI Universe" for the Spring 2017 Semester in [Eurecom](http://www.eurecom.fr/en/) being developed by [Daniele Reda](http://www.github.com/rdednl) with professor [Pietro Michiardi](https://github.com/michiard) as supervisor.
+
 # universe-starter-agent
 
 The codebase implements a starter agent that can solve a number of `universe` environments.
@@ -150,6 +155,3 @@ use 16 workers on a machine with 8 (and possibly even 4) cores.
 
 Now that you have seen an example agent, develop agents of your own.  We hope that you will find
 doing so to be an exciting and an enjoyable task.
-=======
-# tensorpong
->>>>>>> 1a9f2361ad2571a6ba77d70a55be51076b501185
