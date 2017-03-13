@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # universe-starter-agent
 
 The codebase implements a starter agent that can solve a number of `universe` environments.
@@ -149,3 +150,6 @@ use 16 workers on a machine with 8 (and possibly even 4) cores.
 
 Now that you have seen an example agent, develop agents of your own.  We hope that you will find
 doing so to be an exciting and an enjoyable task.
+=======
+# tensorpong
+>>>>>>> 1a9f2361ad2571a6ba77d70a55be51076b501185
