@@ -1,15 +1,15 @@
-## universe-starter-agent
+# universe-starter-agent
 
-# Preface
+## Preface
 
 This repo is a clone of the original [universe-starter-agent](https://github.com/openai/universe-starter-agent) by [openai](https://openai.com/). It has been cloned as a starting point for the Semester Project "Learning to Play Atari Pong with TensorFlow on OpenAI Universe" for the Spring 2017 Semester in [Eurecom](http://www.eurecom.fr/en/) being developed by [Daniele Reda](http://www.github.com/rdednl) with professor [Pietro Michiardi](https://github.com/michiard) as supervisor.
 
-# universe-starter-agent
+## universe-starter-agent
 
 The codebase implements a starter agent that can solve a number of `universe` environments.
 It contains a basic implementation of the [A3C algorithm](https://arxiv.org/abs/1602.01783), adapted for real-time environments.
 
-# Dependencies
+## Dependencies
 
 * Python 2.7 or 3.5
 * [six](https://pypi.python.org/pypi/six) (for py2/3 compatibility)
@@ -23,7 +23,7 @@ It contains a basic implementation of the [A3C algorithm](https://arxiv.org/abs/
 * [numpy](https://pypi.python.org/pypi/numpy)
 * [scipy](https://pypi.python.org/pypi/scipy)
 
-# Getting Started
+## Getting Started
 
 ```
 conda create --name universe-starter-agent python=3.5
@@ -44,7 +44,7 @@ conda install -y scipy
 Add the following to your `.bashrc` so that you'll have the correct environment when the `train.py` script spawns new bash shells
 ```source activate universe-starter-agent```
 
-## Atari Pong
+### Atari Pong
 
 `python train.py --num-workers 2 --env-id PongDeterministic-v3 --log-dir /tmp/pong`
 
@@ -77,7 +77,7 @@ For best performance, it is recommended for the number of workers to not exceed 
 
 You can stop the experiment with `tmux kill-session` command.
 
-## Playing games over remote desktop
+### Playing games over remote desktop
 
 The main difference with the previous experiment is that now we are going to play the game through VNC protocol.
 The VNC environments are hosted on the EC2 cloud and have an interface that's different from a conventional Atari Gym
@@ -100,7 +100,7 @@ VNC password is `"openai"`.
 
 ![pong](https://github.com/openai/universe-starter-agent/raw/master/imgs/vnc_pong.png "Pong over VNC")
 
-#### Important caveats
+##### Important caveats
 
 One of the novel challenges in using Universe environments is that
 they operate in *real time*, and in addition, it takes time for the
@@ -132,12 +132,12 @@ difficulty solving VNC Pong when the environment was on the cloud
 while the agent was not.  This issue affects environments that place
 great emphasis on reaction time.
 
-### A note on tuning
+#### A note on tuning
 
 This implementation has been tuned to do well on VNC Pong, and we do not guarantee
 its performance on other tasks.  It is meant as a starting point.
 
-### Playing flash games
+#### Playing flash games
 
 You may run the following command to launch the agent on the game Neon Race:
 
@@ -151,7 +151,7 @@ Getting 80% of the maximal score takes between 1 and 2 hours with 16 workers, an
 takes about 12 hours.  Also, flash games are run at 5fps by default, so it should be possible to productively
 use 16 workers on a machine with 8 (and possibly even 4) cores.
 
-### Next steps
+#### Next steps
 
 Now that you have seen an example agent, develop agents of your own.  We hope that you will find
 doing so to be an exciting and an enjoyable task.
